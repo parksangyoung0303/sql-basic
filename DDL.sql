@@ -4,7 +4,7 @@
 -- 데이터 정의어 (DDL)
 -- 데이터베이스를 정의하고 관리하는데 사용되는 언어, 사용자를 정의하고 관리하는데 사용되는 언어
 
-구조 = schema
+-- 구조 = schema
 -- CREATE : 구조를 생성하는 명령어
 -- CREATE 생성할구조 구조이름 (구조별 옵션);
 
@@ -39,7 +39,7 @@ CREATE TABLE data_type (
     -- DATE : 날짜
     date_c DATE,
     -- DATETIME : 날짜 및 시간
-    datetime_c DATETIME,
+    datetime_c DATETIME
     );
 
 -- 사용자 생성
@@ -53,7 +53,7 @@ CREATE USER 'guest2'@'192.168.1.101' IDENTIFIED BY '1234';
 DROP USER 'guest'@'192.168.1.101';
 -- 테이블 삭제
 DROP TABLE data_type;
---데이터베이스 삭제
+-- 데이터베이스 삭제
 DROP DATABASE practice_sql;
 
 -- ALTER : 데이터 구조(스키마)를 변경(수정)하는 명령어
